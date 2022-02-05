@@ -35,7 +35,7 @@ def splat(filename, start, end, interval):
     filter_string = f'select=not(mod(n\,{sample_frequency})),scale=360:-1,tile={col_count}x{row_count}'
     
     output_filename = os.path.splitext(filename)[0] + '.jpg'
-    subprocess.run([FFMPEG_BINARY, '-ss', str(start), '-i', filename, '-frames', '1', '-vf', filter_string, output_filename])
+    subprocess.run([FFMPEG_BINARY, '-ss', str(start), '-i', filename, '-y', '-frames', '1', '-vf', filter_string, output_filename])
 
 
 def main():

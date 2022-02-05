@@ -17,6 +17,8 @@ setup(
     packages=['videosplatter'],
     install_requires=[
         'imageio-ffmpeg==0.4.5',
+        'cx-freeze==6.10',
+        'gooey==1.0.8.1',
     ],
     entry_points= {
         'console_scripts': ['videosplatter=videosplatter.splat:main'],
