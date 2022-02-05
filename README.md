@@ -12,7 +12,7 @@ pip install videosplatter
 ## Usage
 Command line:
 ```
-$ python splat.py <filename> [--start <start time in seconds>] [--end <end time in seconds>] [--interval <number of seconds between samples]
+$ videosplatter <filename> [--start <start time in seconds>] [--end <end time in seconds>] [--interval <number of seconds between samples]
 ```
 
 Example:
