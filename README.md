@@ -18,7 +18,7 @@ $ videosplatter <filename> [--start <start time in seconds>] [--end <end time in
 Example:
 
 ```
-$ python splat.py city.mp4
+$ videosplatter city.mp4
 ```
 ![mosaic image from New York City aerial footage](city.jpg)
 _Original from The Dronalist, used under CC-BY_
