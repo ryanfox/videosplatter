@@ -36,3 +36,19 @@ def splat(filename, start, end, interval):
     
     output_filename = os.path.splitext(filename)[0] + '.jpg'
     subprocess.run([FFMPEG_BINARY, '-ss', str(start), '-i', filename, '-frames', '1', '-vf', filter_string, output_filename])
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('file', help='video file to splatter')
+    parser.add_argument('--start', type=int, default=0, help='start time in seconds')
+    parser.add_argument('--end', type=int, default=None, help='end time in seconds')
+    parser.add_argument('-i', '--interval', type=int, default=10, help='how many seconds between images')
+    args = parser.parse_args()
+
+    splat(args.file, args.start, args.end, args.interval)
+
+
+if __name__ == '__main__':
+    main()
+
