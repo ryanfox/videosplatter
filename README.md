@@ -1,7 +1,14 @@
 # Video splatter
 
-Splat a video into a mosaic by sampling a frame at regular intervals. Useful
+Splat a video into a single image by sampling a frame at regular intervals. Useful
 for seeing the changes over time of an entire video or movie.
+
+Can produce "barcodes":
+![barcode image from New York City aerial footage](city_barcode.jpg)
+
+Or mosaics:
+![mosaic image from New York City aerial footage](city_splat.jpg)
+_Original from The Dronalist, used under CC-BY_
 
 ## Installation
 
@@ -20,9 +27,6 @@ Example:
 ```
 $ videosplatter city.mp4
 ```
-![mosaic image from New York City aerial footage](city.jpg)
-_Original from The Dronalist, used under CC-BY_
-
 
 Programmatic usage:
 ```
