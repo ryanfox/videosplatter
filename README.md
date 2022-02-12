@@ -10,6 +10,11 @@ Or mosaics:
 ![mosaic image from New York City aerial footage](city_splat.jpg)
 _Original from The Dronalist, used under CC-BY_
 
+It also can calculate some stats about the visuals of your video. Colorfulness is a way to quantify how bright and
+varied the colors in an image are. Contrast does the same for light and dark.
+
+Add them together to get something like "visual 🌶️ factor".
+
 ## Installation
 
 ```
