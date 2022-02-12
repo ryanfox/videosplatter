@@ -6,7 +6,7 @@ with open('README.md') as f:
 
 setup(
     name='videosplatter',
-    version='0.2',
+    version='0.3',
     description='Splat videos',
     long_description=long_description,
     long_description_content_type="text/markdown",
